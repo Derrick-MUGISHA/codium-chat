@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codium Chat</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Sidebar for Chat List -->
+    <div id="sidebar" class="codium-sidebar">
+        <h2>Chats</h2>
+        <ul id="chat-list">
+            <!-- Chat items will be dynamically generated -->
+        </ul>
+    </div>
+
+    <!-- Main Chat Area -->
+    <div id="chat-window">
+        <div id="chat-header">
+            <img src="assets/user-placeholder.png" alt="User" class="chat-avatar-large" id="chat-avatar">
+            <h2 id="chat-title">Select a Chat</h2>
+            <button id="more-options">⋮</button>
+        </div>
+        <div id="message-area">
+            <ul id="messages">
+                <!-- Messages will be dynamically generated -->
+            </ul>
+        </div>
+        <div id="chat-controls">
+            <input type="text" id="message-input" placeholder="Type your message..." disabled>
+            <button id="send-button" disabled>Send</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
